@@ -709,17 +709,9 @@ class JForm
 				{
 
 					// If set to replace found fields remove it from the current definition.
-<<<<<<< HEAD
-					if ($replace)
+
+					if (!$replace)
 					{
-						$dom = dom_import_simplexml($current);
-						$dom->parentNode->removeChild($dom);
-					}
-					else
-					{
-=======
-					if (!$replace) {
->>>>>>> 0f2af68a22286603210dfff2523004506c7ef760
 						unset($field);
 					}
 				}
